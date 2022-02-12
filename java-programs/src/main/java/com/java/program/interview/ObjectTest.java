@@ -1,22 +1,22 @@
 package com.java.program.interview;
 
-public class Test {
+public class ObjectTest {
 	
 	private String testString;
 	
-	public void method1(Test test) {
+	public void method1(ObjectTest test) {
 		test.testString = "method1";
 	}
 	
-public void method2(Test test) {
-	test = new Test();
+public void method2(ObjectTest test) {
+	test = new ObjectTest();
 	test.testString = "method2";
 	System.out.println("Method 2 :" +test);
 		
 	}
 
 	public static void main(String[] args) {
-		Test test = new Test();
+		ObjectTest test = new ObjectTest();
 		test.testString = "Main Method";
 		
 		System.out.println(test.testString);
